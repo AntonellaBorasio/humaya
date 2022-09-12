@@ -3,19 +3,74 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-/* Generales */
+/* Generales y variables*/
 
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
 :root {
   --marron: #63421e;
   --marronClaro: #bca177;
   --beige: #d5ac8c; /* Textos */
-  --gris: #333333:
+  --gris: #222222;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
+.header-nav {
+  background-color: var(--gris);
+}
+
+@media (min-width: 320px) and (max-width: 940px) {
+}
+
+@media (min-width: 941px) and (max-width: 1300px) {
+  /* Header */
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1301px) {
+  /* Header */
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+  }
+
+  .header-nav-logo img {
+    display: flex;
+    align-content: center;
+  }
+
+  .header-nav-enlaces {
+    display: flex;
+    gap: 3rem;
+    padding-right: 1rem;
+  }
+
+  .header-nav-enlaces a {
+    color: var(--beige);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 }
