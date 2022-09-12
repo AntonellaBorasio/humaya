@@ -1,0 +1,21 @@
+/* Normalize */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Generales */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --marron: #63421e;
+  --marronClaro: #bca177;
+  --beige: #d5ac8c; /* Textos */
+  --gris: #333333:
+}
