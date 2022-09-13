@@ -10,22 +10,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+
+
 </head>
 
 <body>
+
   <!-- Enlaces fijos -->
   <header class="header">
     <nav class="header-nav">
 
       <div class="header-nav-logo">
-        <a href="index.html"><img src="./images/Logo/H.png" alt="Logo simplificado Humaya"><span>HUMAYA</span> </a>
+        <a href="index.html"><img src="./images/Logo/H.png" alt="Logo simplificado Humaya"><span
+            class="logo-nombre">HUMAYA</span> </a>
       </div>
 
-      <div class="header-nav-enlaces">
-        <a href="#">Home</a>
-        <a href="#">Productos</a>
-        <a href="#">Locales</a>
-        <a href="#">Contacto</a>
+      <div class="header-nav-enlaces acordeon-enlaces">
+        <div id="enlaces-nombre">
+          <button class="enlaces-nombre">Navegación <i class="fa-sharp fa-solid fa-caret-down"></i></button>
+        </div>
+        <div id="header-nav-enlaces-bloque" class="header-nav-enlaces-bloque">
+          <a href="#">Home</a>
+          <a href="#">Productos</a>
+          <a href="#">Locales</a>
+          <a href="#">Contacto</a>
+        </div>
       </div>
     </nav>
   </header>
@@ -179,6 +188,9 @@
     <div class="legales">Maquetado Web - Antonella Borasio, 2022</div>
   </footer>
 
+
+  <script src="https://kit.fontawesome.com/e94fd7a255.js" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
