@@ -21,6 +21,7 @@ body {
   --marronClaro: #bca177;
   --beige: #d5ac8c; /* Textos */
   --gris: #222222;
+  --blanco: #f0ebe7; /* Textos, blanco menos agresivo */
 }
 
 a {
@@ -35,6 +36,40 @@ h1 {
 
 .header-nav {
   background-color: var(--gris);
+}
+
+/* Main */
+
+main {
+  background-image: url(../images/main-up.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.main-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--blanco);
+}
+
+.main-card button {
+  border-radius: 50px;
+  display: inline-block;
+  text-shadow: 0.1px 0.1px var(--marronClaro);
+  background-color: var(--beige);
+  color: var(--marron);
+  border: none;
+  box-shadow: 0px 1px 0px 0px #1c1b18;
+}
+
+.main-card button:hover {
+  background-color: #b69479;
+  transition: all 0.5s ease;
 }
 
 @media (min-width: 220px) and (max-width: 940px) {
@@ -97,6 +132,28 @@ h1 {
   }
 
   /* Main */
+
+  main {
+    /*     background-size: 100%; */
+    background-position: top;
+    min-height: 6rem;
+  }
+
+  .main-card {
+    max-width: 40%;
+    margin-top: 3.2rem;
+    color: var(--blanco);
+  }
+
+  .main-card h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .main-card p,
+  .main-card button {
+    display: none;
+  }
 }
 
 @media (min-width: 941px) and (max-width: 1300px) {
@@ -149,7 +206,22 @@ h1 {
   /* Main */
 
   main {
-    margin-top: 6rem;
+    margin-top: 5rem;
+    min-height: 30rem;
+  }
+
+  .main-card {
+    max-width: 40%;
+    margin-top: 7.5rem;
+    font-size: 1.2rem;
+  }
+
+  .main-card button {
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 0.8rem 2rem;
+    font-weight: 700;
+    font-size: 1.1rem;
   }
 }
 
@@ -205,43 +277,20 @@ h1 {
 
   main {
     margin-top: 5rem;
-    background-image: url(../images/main-up.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     min-height: 30rem;
-    display: flex;
-    justify-content: center;
   }
 
   .main-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     max-width: 30%;
-    text-align: center;
-    color: white;
     margin-top: 7.5rem;
     font-size: 1.2rem;
   }
 
   .main-card button {
     margin-top: 2rem;
-    border-radius: 50px;
-    display: inline-block;
     cursor: pointer;
     padding: 1rem 2rem;
     font-weight: 700;
     font-size: 1.2rem;
-    text-shadow: 0.1px 0.1px var(--marronClaro);
-    background-color: var(--beige);
-    color: var(--marron);
-    border: none;
-    box-shadow: 0px 1px 0px 0px #1c1b18;
-  }
-
-  .main-card button:hover {
-    background-color: #b69479;
-    transition: all 0.5s ease;
   }
 }
