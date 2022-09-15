@@ -1,4 +1,4 @@
-/* Normalize */
+/* Box sizing */
 
 html {
   box-sizing: border-box;
@@ -21,7 +21,7 @@ body {
   --marronClaro: #bca177;
   --beige: #d5ac8c; /* Textos */
   --gris: #222222;
-  --blanco: #f0ebe7; /* Textos, blanco menos agresivo */
+  --blanco: #f0ebe7; /* Textos, más contraste */
 }
 
 a {
@@ -71,6 +71,8 @@ main {
   background-color: #b69479;
   transition: all 0.5s ease;
 }
+
+/* Media Queries */
 
 @media (min-width: 220px) and (max-width: 940px) {
   /* Header */
@@ -292,5 +294,67 @@ main {
     padding: 1rem 2rem;
     font-weight: 700;
     font-size: 1.2rem;
+  }
+
+  /* Productos */
+
+  .productos-card {
+    background-color: black;
+    color: var(--blanco);
+    font-size: 1.2rem;
+  }
+
+  .productos-card h3 {
+    color: var(--beige);
+    font-size: 2rem;
+  }
+
+  .productos-card-info {
+    font-weight: 200;
+  }
+
+  .productos-grid button {
+    background-color: transparent;
+    border: 3px solid var(--beige);
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--beige);
+  }
+
+  .presentacion {
+    color: var(--beige);
+    font-weight: bold;
+  }
+
+  .productos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 463px);
+      align-content: center;}
+  }
+
+  /* Productos */
+
+  .productos-grid button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .productos-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  .productos-alfajoresMaicena {
+    grid-area: 4 / 1 / 5 / 3;
+    display: flex;
+  }
+
+  .productos-alfajoresMaicena img {
+    width: 400px;
+    height: auto
+
   }
 }
