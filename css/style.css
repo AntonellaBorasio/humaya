@@ -74,6 +74,8 @@ main {
 
 /* Productos */
 
+/* Productos: título */
+
 .productos-titulo {
   background-color: var(--gris);
 }
@@ -84,7 +86,19 @@ main {
   text-align: center;
 }
 
+/* Productos: cards */
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 400px);
+}
+
 .productos-card-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
   background-color: black;
   color: var(--blanco);
 }
@@ -98,6 +112,8 @@ main {
   background-color: transparent;
   border: 3px solid var(--beige);
   color: var(--beige);
+  cursor: pointer;
+  font-weight: 700;
 }
 
 .presentacion {
@@ -110,6 +126,34 @@ main {
   height: 100%;
   object-fit: cover;
   object-position: right;
+}
+
+/* Productos: chocolates */
+
+.productos-chocolates {
+  grid-area: 4 / 1 / 5 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--beige);
+  color: #63421e;
+}
+
+.productos-chocolates-info h3 {
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.productos-chocolates-info button {
+  border: 3px solid var(--marron);
+  color: var(--marron);
+  font-weight: bold;
+}
+
+.productos-chocolates-info-boton {
+  display: flex;
+  justify-content: center;
 }
 
 /* Media Queries */
@@ -267,6 +311,80 @@ main {
     font-weight: 700;
     font-size: 1.1rem;
   }
+
+  /* Productos */
+
+  /* Productos: título */
+
+  .productos-titulo h2 {
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+
+  /* Productos: cards */
+
+  .productos-card-info {
+    line-height: 2.5rem;
+  }
+
+  .productos-card-info-centrar {
+    max-width: 90%;
+  }
+
+  .productos-card-info h3 {
+    font-size: 1.8rem;
+  }
+
+  .productos-descripcion {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .presentacion {
+    font-size: 1rem;
+  }
+
+  .productos-dulceSinAzucar-info {
+    text-align: right;
+  }
+
+  .productos-grid button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 0.7rem;
+  }
+
+  /* Productos: Chocolates */
+
+  .productos-chocolates {
+    gap: 3rem;
+    padding: 2rem 4rem;
+  }
+
+  .productos-chocolates-info h3 {
+    font-size: 1.7rem;
+  }
+
+  .productos-chocolates-info-descripcion {
+    font-size: 1.1rem;
+  }
+
+  .productos-chocolates-info-presentacion {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .productos-chocolates-info button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 0.7rem;
+  }
+
+  .productos-chocolates img {
+    width: 350px;
+    height: auto;
+    box-shadow: 3px 3px 5px 0px var(--marron);
+  }
 }
 
 @media (min-width: 1301px) {
@@ -396,46 +514,34 @@ main {
 
   /* Productos: Alfajores de maicena */
 
-  .productos-alfajoresMaicena {
-    grid-area: 4 / 1 / 5 / 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--beige);
-    color: #63421e;
-    gap: 5rem;
+  .productos-chocolates {
+    gap: 7rem;
     padding: 2rem 10rem;
   }
 
-  .productos-alfajoresMaicena-info h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-    margin: 2rem;
+  .productos-chocolates-info {
+    max-width: 50%;
   }
 
-  .productos-alfajoresMaicena-info-descripcion {
+  .productos-chocolates-info h3 {
+    font-size: 2rem;
+  }
+
+  .productos-chocolates-info-descripcion {
     font-size: 1.3rem;
   }
 
-  .productos-alfajoresMaicena-info-presentacion {
+  .productos-chocolates-info-presentacion {
     font-weight: bold;
     font-size: 1.2rem;
   }
 
-  .productos-alfajoresMaicena-info button {
-    border: 3px solid var(--marron);
-    color: var(--marron);
+  .productos-chocolates-info button {
     font-size: 1.2rem;
-    font-weight: bold;
     margin: 1.5rem;
   }
-  .productos-alfajoresMaicena-info-boton {
-    display: flex;
-    justify-content: center;
-  }
 
-  .productos-alfajoresMaicena img {
+  .productos-chocolates img {
     width: 400px;
     height: auto;
     box-shadow: 3px 3px 5px 0px var(--marron);
