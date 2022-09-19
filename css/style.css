@@ -136,7 +136,7 @@ main {
   align-items: center;
   justify-content: center;
   background-color: var(--beige);
-  color: #63421e;
+  color: var(--marron);
 }
 
 .productos-chocolates-info h3 {
@@ -264,7 +264,8 @@ main {
   .productos-foto img {
     width: 100%;
     height: auto;
-    object-fit: contain;
+    max-height: 400px;
+    object-fit: cover;
   }
 
   .productos-foto {
@@ -272,13 +273,13 @@ main {
   }
 
   .productos-card-info {
-    font-weight: 400;
+    justify-content: left;
     line-height: 1.5rem;
     padding: 1.2rem;
   }
 
   .productos-card-info h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .productos-grid button {
@@ -303,34 +304,36 @@ main {
   /* Productos: Alfajores de maicena */
 
   .productos-chocolates {
-    gap: 7rem;
-    padding: 2rem 10rem;
+    display: flex;
+    flex-direction: column;
+    /*    align-items: left;
+    justify-content: left; */
   }
-
-  .productos-chocolates-info {
-    max-width: 50%;
+  .productos-chocolates {
+    padding: 1.2rem;
+    gap: 1rem;
   }
 
   .productos-chocolates-info h3 {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 
   .productos-chocolates-info-descripcion {
-    font-size: 1.3rem;
+    display: none;
   }
 
   .productos-chocolates-info-presentacion {
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-weight: 400;
+    font-size: 0.8rem;
   }
 
   .productos-chocolates-info button {
-    font-size: 1.2rem;
-    margin: 1.5rem;
+    font-size: 0.8rem;
+    margin: 0.5rem;
   }
 
   .productos-chocolates img {
-    width: 400px;
+    max-width: 350px;
     height: auto;
     box-shadow: 3px 3px 5px 0px var(--marron);
   }
