@@ -160,6 +160,27 @@ main {
   grid-area: 2 / 2 / 3 / 3;
 }
 
+/* Características */
+
+.caracteristicas {
+  background-color: var(--gris);
+}
+
+.caracteristicas h2 {
+  margin: 0;
+  text-align: center;
+  color: var(--blanco);
+}
+
+.caracteristicas-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  font-weight: bold;
+  color: var(--blanco);
+}
+
 /* Media Queries */
 
 @media (min-width: 220px) and (max-width: 940px) {
@@ -412,8 +433,8 @@ main {
   /* Productos: título */
 
   .productos-titulo h2 {
-    padding: 1rem;
-    font-size: 1.4rem;
+    padding: 0.6rem;
+    font-size: 1.3rem;
   }
 
   /* Productos: cards */
@@ -479,6 +500,28 @@ main {
     width: 350px;
     height: auto;
     box-shadow: 3px 3px 5px 0px var(--marron);
+  }
+
+  /* Caracteristicas */
+
+  .caracteristicas h2 {
+    padding: 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  .caracteristicas-container {
+    padding: 0.5rem;
+    font-size: 1rem;
+    gap: 3rem;
+  }
+
+  .caracteristicas-container-individual {
+    min-width: 170px;
+  }
+
+  .caracteristicas-icono {
+    max-width: 120px;
+    min-width: 120px;
   }
 }
 
@@ -648,28 +691,15 @@ main {
 
   /* Caracteristicas */
 
-  .caracteristicas {
-    background-color: var(--gris);
-  }
-
   .caracteristicas h2 {
-    margin: 0;
     padding: 1.5rem;
-    text-align: center;
-    color: var(--blanco);
     font-size: 1.7rem;
   }
 
   .caracteristicas-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 5rem;
-    text-align: center;
-    font-weight: bold;
-    color: var(--blanco);
     padding: 1rem;
     font-size: 1.2rem;
+    gap: 5rem;
   }
 
   .caracteristicas-container-individual {
