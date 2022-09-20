@@ -358,6 +358,27 @@ main {
     height: auto;
     box-shadow: 3px 3px 5px 0px var(--marron);
   }
+
+  /* Caracteristicas */
+
+  .caracteristicas h2 {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .caracteristicas-container {
+    padding-bottom: 1rem;
+    gap: 1rem;
+  }
+
+  .caracteristicas-icono {
+    min-width: 70px;
+    max-width: 70px;
+  }
+
+  .caracteristicas-descripcion {
+    display: none;
+  }
 }
 
 @media (min-width: 941px) and (max-width: 1300px) {
