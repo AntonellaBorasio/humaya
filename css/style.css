@@ -489,7 +489,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.7rem;
+    padding: 0.5rem;
     position: fixed;
     top: 0;
     min-width: 100%;
@@ -533,7 +533,7 @@ main {
   /* Main */
 
   main {
-    margin-top: 5rem;
+    margin-top: 4.9rem;
     min-height: 30rem;
   }
 
@@ -556,8 +556,8 @@ main {
   /* Productos: título */
 
   .productos-titulo h2 {
-    padding: 1.2rem;
-    font-size: 1.8rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
   }
 
   /* Productos: cards */
@@ -644,5 +644,40 @@ main {
 
   .productos-dulceSinAzucar-foto {
     grid-area: 2 / 2 / 3 / 3;
+  }
+
+  /* Caracteristicas */
+
+  .caracteristicas {
+    background-color: var(--gris);
+  }
+
+  .caracteristicas h2 {
+    margin: 0;
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 1.7rem;
+  }
+
+  .caracteristicas-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--blanco);
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .caracteristicas-container-individual {
+    max-width: 150px;
+  }
+
+  .caracteristicas-icono {
+    max-width: 150px;
+    min-width: 150px;
   }
 }
