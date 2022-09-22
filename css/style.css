@@ -242,6 +242,13 @@ main {
 
 /* Footer */
 
+.footer-titulo h2 {
+  background-color: var(--gris);
+  margin: 0;
+  color: var(--blanco);
+  text-align: center;
+}
+
 footer {
   background-color: var(--gris);
   color: var(--beige);
@@ -273,11 +280,6 @@ footer {
   display: none;
 }
 
-.footer-redes-iconos {
-  display: flex;
-  gap: 1rem;
-}
-
 .footer-container h4 {
   padding: 0.5rem;
 }
@@ -294,6 +296,12 @@ footer {
   color: var(--marron);
   font-weight: 400;
   text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /* Media Queries */
@@ -580,12 +588,22 @@ footer {
 
   /* Footer */
 
+  .footer-titulo h2 {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
   .footer-container {
     display: flex;
     justify-content: space-around;
     gap: 2rem;
     flex-wrap: wrap;
     padding: 1rem;
+  }
+
+  .footer-redes-iconos {
+    display: flex;
+    gap: 1rem;
   }
 
   .footer-logo {
@@ -874,6 +892,47 @@ footer {
   .recetas-card-info-boton {
     display: flex;
     justify-content: center;
+  }
+
+  /* Footer */
+
+  .footer-titulo h2 {
+    font-size: 1.4rem;
+  }
+
+  .footer-container {
+    gap: 2rem;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .footer-logo {
+    padding: 0.5rem 1rem 0rem 1rem;
+    align-self: center;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-redes-iconos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer h4 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-ubicacion iframe {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .footer-ubicacion {
+    padding: 0rem 1rem;
   }
 }
 
