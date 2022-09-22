@@ -28,7 +28,11 @@ a {
   text-decoration: none;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
 }
 
@@ -81,7 +85,6 @@ main {
 }
 
 .productos-titulo h2 {
-  margin: 0;
   color: #f0ebe7;
   text-align: center;
 }
@@ -105,7 +108,6 @@ main {
 
 .productos-card-info h3 {
   color: var(--beige);
-  margin: 0;
 }
 
 .productos-grid button {
@@ -142,7 +144,6 @@ main {
 .productos-chocolates-info h3 {
   font-weight: 700;
   text-align: center;
-  margin: 0;
 }
 
 .productos-chocolates-info button {
@@ -167,7 +168,6 @@ main {
 }
 
 .caracteristicas h2 {
-  margin: 0;
   text-align: center;
   color: var(--blanco);
 }
@@ -185,7 +185,6 @@ main {
 
 .formulario h2 {
   background-color: var(--gris);
-  margin: 0;
   color: var(--blanco);
   text-align: center;
 }
@@ -379,6 +378,9 @@ main {
   .productos-chocolates-info-presentacion {
     font-weight: 400;
     font-size: 0.8rem;
+    margin: 0.5rem auto;
+    text-align: center;
+    max-width: 90%;
   }
 
   .productos-chocolates-info button {
@@ -457,6 +459,33 @@ main {
     font-size: 1rem;
     border: 2px solid var(--marron);
     border-radius: 2px;
+  }
+
+  /* Recetas */
+
+  .recetas h2 {
+    background-color: var(--gris);
+    margin: 0;
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .recetas img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  .recetas-card {
+    background-color: var(--beige);
+  }
+
+  .recetas-card-info {
+    padding: 1rem;
   }
 }
 
