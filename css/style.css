@@ -213,6 +213,33 @@ main {
   font-weight: bold;
 }
 
+/* Recetas */
+
+.recetas h2 {
+  background-color: var(--gris);
+  margin: 0;
+  color: var(--blanco);
+  text-align: center;
+}
+
+.recetas-card {
+  background-color: var(--beige);
+}
+
+.recetas-card h4 {
+  color: var(--marron);
+}
+
+.recetas-card p {
+  color: var(--marron);
+}
+
+.recetas-card button {
+  background-color: transparent;
+  color: var(--marron);
+  font-weight: bold;
+}
+
 /* Media Queries */
 
 @media (min-width: 220px) and (max-width: 940px) {
@@ -454,7 +481,6 @@ main {
   .formulario-campos-submit {
     max-width: 150px;
     margin: 1.5rem auto 0 auto;
-    cursor: pointer;
     padding: 0.5rem 1.5rem;
     font-size: 1rem;
     border: 2px solid var(--marron);
@@ -464,10 +490,6 @@ main {
   /* Recetas */
 
   .recetas h2 {
-    background-color: var(--gris);
-    margin: 0;
-    color: var(--blanco);
-    text-align: center;
     padding: 1rem;
     font-size: 1.2rem;
   }
@@ -477,15 +499,28 @@ main {
     height: auto;
     max-height: 450px;
     object-fit: cover;
-    object-position: right;
-  }
-
-  .recetas-card {
-    background-color: var(--beige);
   }
 
   .recetas-card-info {
     padding: 1rem;
+  }
+
+  .recetas-card h4 {
+    font-size: 1.2rem;
+    color: var(--gris);
+  }
+
+  .recetas-card p {
+    font-size: 0.9rem;
+    margin: 0.5rem 0 1rem 0;
+  }
+
+  .recetas-card button {
+    border: 3px solid var(--marron);
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -696,6 +731,61 @@ main {
     font-size: 1rem;
     border: 3px solid var(--marron);
     border-radius: 2px;
+  }
+
+  /* Recetas */
+
+  .recetas h2 {
+    padding: 0.6rem;
+    font-size: 1.4rem;
+  }
+
+  .recetas-container {
+    background-color: var(--gris);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 3rem 1rem 3rem;
+  }
+
+  .recetas img {
+    width: 100%;
+    height: auto;
+    max-height: 170px;
+    min-height: 170px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .recetas-card-info {
+    padding: 0.5rem 1.2rem;
+  }
+
+  .recetas-card h4 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--gris);
+    font-weight: 700;
+  }
+
+  .recetas-card p {
+    font-size: 0.9rem;
+    margin: 0.5rem 0 1rem 0;
+  }
+
+  .recetas-card button {
+    border: 3px solid var(--marron);
+    color: var(--marron);
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .recetas-card-info-boton {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -929,5 +1019,61 @@ main {
     font-size: 1.2rem;
     border: 3px solid var(--marron);
     border-radius: 3px;
+  }
+
+  /* Recetas */
+
+  .recetas h2 {
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .recetas-container {
+    background-color: var(--gris);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    gap: 5rem;
+    padding: 0.5rem 5rem 2rem 5rem;
+  }
+
+  .recetas img {
+    width: 100%;
+    max-height: 270px;
+    min-height: 270px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .recetas-card-info {
+    padding: 0.5rem 1.2rem;
+  }
+
+  .recetas-card h4 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--gris);
+    font-weight: 700;
+  }
+
+  .recetas-card p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0.5rem 0 1.2rem 0;
+  }
+
+  .recetas-card button {
+    border: 4px solid var(--marron);
+    color: var(--marron);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .recetas-card-info-boton {
+    display: flex;
+    justify-content: center;
   }
 }
