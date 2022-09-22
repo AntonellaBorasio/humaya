@@ -411,6 +411,52 @@ main {
   .caracteristicas-descripcion {
     display: none;
   }
+
+  /* Formulario */
+
+  .formulario h2 {
+    padding-top: 1.7rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .formulario-container {
+    display: flex;
+  }
+
+  .formulario-img {
+    display: none;
+  }
+
+  .formulario-campos {
+    padding: 1.5rem;
+  }
+
+  .formulario-campos-campo {
+    border-radius: 3px;
+    padding: 0.3rem;
+  }
+
+  .formulario-campos label {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .formulario-campos p {
+    font-weight: 700;
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .formulario-campos-submit {
+    max-width: 150px;
+    margin: 1.5rem auto 0 auto;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border: 2px solid var(--marron);
+    border-radius: 2px;
+  }
 }
 
 @media (min-width: 941px) and (max-width: 1300px) {
