@@ -181,6 +181,38 @@ main {
   color: var(--blanco);
 }
 
+/* Formulario */
+
+.formulario h2 {
+  background-color: var(--gris);
+  margin: 0;
+  color: var(--blanco);
+  text-align: center;
+}
+
+.formulario-container {
+  background-color: var(--blanco);
+}
+
+.formulario-campos {
+  display: flex;
+  flex-direction: column;
+  color: var(--marron);
+  margin: auto;
+}
+
+.formulario-campos-campo {
+  background-color: var(--marron);
+  border: none;
+  color: var(--blanco);
+}
+
+.formulario-campos-submit {
+  background-color: transparent;
+  color: var(--marron);
+  font-weight: bold;
+}
+
 /* Media Queries */
 
 @media (min-width: 220px) and (max-width: 940px) {
@@ -527,7 +559,7 @@ main {
 
   .caracteristicas h2 {
     padding: 1.2rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .caracteristicas-container {
@@ -543,6 +575,51 @@ main {
   .caracteristicas-icono {
     max-width: 120px;
     min-width: 120px;
+  }
+
+  /* Formulario */
+
+  .formulario h2 {
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .formulario-container {
+    display: flex;
+  }
+
+  .formulario-img {
+    max-height: 500px;
+  }
+
+  .formulario-campos-campo {
+    border-radius: 2px;
+    padding: 0.7rem;
+  }
+
+  .formulario-campos {
+    padding: 2rem;
+  }
+
+  .formulario-campos label {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .formulario-campos p {
+    font-weight: 700;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .formulario-campos-submit {
+    margin: 1.5rem auto 0 auto;
+    cursor: pointer;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    border: 3px solid var(--marron);
+    border-radius: 2px;
   }
 }
 
@@ -730,5 +807,51 @@ main {
   .caracteristicas-icono {
     max-width: 150px;
     min-width: 150px;
+  }
+
+  /* Formulario */
+
+  .formulario h2 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.7rem;
+  }
+
+  .formulario-container {
+    display: flex;
+  }
+
+  .formulario-img {
+    max-height: 630px;
+  }
+
+  .formulario-campos {
+    padding: 2rem;
+  }
+
+  .formulario-campos-campo {
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+
+  .formulario-campos label {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .formulario-campos p {
+    font-weight: 700;
+    margin: 0;
+    font-size: 1.4rem;
+  }
+
+  .formulario-campos-submit {
+    max-width: 150px;
+    margin: 3rem auto 0 auto;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    border: 3px solid var(--marron);
+    border-radius: 3px;
   }
 }

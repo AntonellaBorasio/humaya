@@ -148,24 +148,28 @@
   <section class="formulario">
 
     <h2>Contáctanos</h2>
-    <div class="imgFormulario"></div>
 
-    <div>
-      <form action="">
-        <p>Déjanos una consulta y nuestro personal se pondrá en contacto a la brevedad:</p>
+    <div class="formulario-container">
 
-        <input type="nombre" id="nombre" name="nombre">
+      <img src="./images/formulario.jpg" alt="Foto alfajores maicena" class="formulario-img">
+
+      <form action="" class="formulario-campos">
+        <p>Déjanos una consulta! Responderemos a la brevedad:</p>
+
         <label for="nombre">NOMBRE</label>
+        <input type="nombre" id="nombre" name="nombre" class="formulario-campos-campo">
 
-        <input type="nombre" id="nombre" name="nombre">
-        <label for="nombre">E-MAIL</label>
+        <label for="email">E-MAIL</label>
+        <input type="email" id="email" name="email" class="formulario-campos-campo">
 
-        <input type="nombre" id="nombre" name="nombre">
-        <label for="nombre">CONSULTA</label>
+        <label for="consulta">CONSULTA</label>
+        <textarea id="consulta" name="consulta" class="formulario-campos-campo" rows="5"></textarea>
 
-        <input type="submit">
+        <input type="submit" class="formulario-campos-submit">
       </form>
+
     </div>
+
   </section>
 
 
