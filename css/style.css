@@ -243,14 +243,14 @@ main {
 /* Footer */
 
 .footer-titulo h2 {
-  background-color: var(--gris);
+  background-color: black;
   margin: 0;
   color: var(--blanco);
   text-align: center;
 }
 
 footer {
-  background-color: var(--gris);
+  background-color: black;
   color: var(--beige);
 }
 
@@ -262,26 +262,9 @@ footer {
   text-align: center;
 }
 
-.footer-logo p {
-  margin: 0.5rem 0;
-  font-weight: 700;
-}
-
-.footer-logo p span {
-  font-weight: 400;
-}
-
-.footer-redes img {
-  max-width: 25px;
-  min-width: 25px;
-}
-
-.footer-redes a p {
-  display: none;
-}
-
-.footer-container h4 {
-  padding: 0.5rem;
+.footer-info {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-container a {
@@ -606,6 +589,29 @@ footer {
     gap: 1rem;
   }
 
+  .footer-redes img {
+    max-width: 40px;
+    min-width: 40px;
+  }
+
+  .footer-logo p {
+    margin: 0.5rem 0;
+    font-weight: 700;
+  }
+
+  .footer-logo p span {
+    font-weight: 400;
+  }
+
+  .footer-redes a p {
+    display: none;
+  }
+
+  .footer-container h4 {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
   .footer-logo {
     padding: 0.5rem 1rem 0rem 1rem;
   }
@@ -898,32 +904,39 @@ footer {
 
   .footer-titulo h2 {
     font-size: 1.4rem;
+    padding-top: 1rem;
   }
 
   .footer-container {
     gap: 2rem;
     padding: 1rem;
-    align-items: center;
   }
 
   .footer-logo {
-    padding: 0.5rem 1rem 0rem 1rem;
+    padding-bottom: 3rem;
     align-self: center;
+    font-size: 1.3rem;
   }
 
-  .footer-info {
-    display: flex;
-    flex-direction: column;
+  .footer-info a {
+    line-height: 3rem;
   }
 
   .footer-redes-iconos {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-redes-iconos img {
+    min-width: 50px;
+    padding-top: 0.2rem;
   }
 
   .footer h4 {
     font-size: 1.5rem;
     text-align: center;
+    padding: 1rem 0;
   }
 
   .footer-ubicacion iframe {
@@ -1222,5 +1235,53 @@ footer {
   .recetas-card-info-boton {
     display: flex;
     justify-content: center;
+  }
+
+  /* Footer */
+
+  .footer-titulo h2 {
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .footer-container {
+    padding: 1rem 2rem;
+  }
+
+  .footer-logo {
+    padding-bottom: 3rem;
+    align-self: center;
+    font-size: 1.3rem;
+  }
+
+  .footer-info a {
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+  }
+
+  .footer-redes-iconos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-redes-iconos img {
+    min-width: 65px;
+    padding-top: 0.2rem;
+  }
+
+  .footer h4 {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .footer-ubicacion iframe {
+    max-width: 400px;
+    max-height: 250px;
+  }
+
+  .footer-ubicacion {
+    padding: 0rem 1rem;
   }
 }
